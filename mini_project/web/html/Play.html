@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Play</title>
+		<link rel="stylesheet" href="/web/css/play.css">
+		<link rel="stylesheet" href="/web/css/bar.css">
+  	<script src="/web/js/jquery-1.7.min.js"></script>
+		<link href="/web/css/font-awesome.css" rel="stylesheet">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+	</head>
+
+	<body>
+	<div class = "board">
+		<div class="card-table">
+				<button id="how_to_play" onclick="how()"></button>
+			<div class = "hand">
+				<label style="font-size:55px;color:white">hand</label>
+				<label style="font-size:55px;color:white">:</label>
+				<label style="font-size:55px;color:white" id="hands">0</label>
+			</div>
+
+			<div class = "deck">
+				<label style="font-size:60px;color:white" id="decks">28</label>
+			</div>
+
+			<div class = "drop">
+				<label style="font-size:55px;color:white">drop</label>
+				<label style="font-size:55px;color:white">:</label>
+				<label style="font-size:55px;color:white" id="drops">0</label>
+			</div>
+
+			<div class = "time">
+				<label style="font-size:40px;color:white"id="minutes">00</label>
+				<label style="font-size:40px;color:white"id="colon">:</label>
+				<label style="font-size:40px;color:white" id="seconds">00</label>
+			</div>
+
+			<div class = "point">
+				<label style="float:right;font-size:40px;color:white" id="point">0</label>
+			</div>
+		</div>
+	</div>
+
+	<h style="margin-left:680px;font-size:80px;color:white">Score</h>
+	<div id="chart" style="margin-left:149.5px"></div>
+  <script src="/web/js/cards.js"></script>
+  <script src="/web/js/play.js"></script>
+  <script src="/web/js/scorebar.js"></script>
+	</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="homepage" content="homepage">
+<title>Homepage</title>
+<link href="/web/css/homepage.css" rel="stylesheet">
+<link href="/web/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+<!--header-->
+<div class="header">
+		<div class="header_column">
+			<div class = "logo">
+				<img src="/material/image/other/logo.jpg">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<div class="blank">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<div class="blank">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<div class="blank">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<div class="blank">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<div class="blank">
+			</div>
+		</div>
+
+		<div class="header_column">
+			<P style="color:white;font-size:50px;margin-top:-10px;">
+				<a href="#story">Story</a></P>
+		</div>
+
+		<div class="header_column">
+			<P style="color:white;font-size:50px;margin-top:-10px;">
+				<a href="#character">Character</a></P>
+		</div>
+
+		<div class="header_column">
+			<P style="color:white;font-size:50px;margin-top:-10px;">
+				<a href="/web/html/Gallery.html" target="_blank">Gallery</a></P>
+		</div>
+
+		<div class="header_column">
+			<P style="color:white;font-size:50px;margin-top:-10px;">
+				<a  href="/web/html/Play.html" target="_blank">Play</a></P>
+		</div>
+
+</div>
+
+<!--content-->
+<div class = "card_banner">
+	<p style="margin-top:-2px;">
+		<img src="/material/image/other/banner.png"></p>
+</div>
+
+<div class = "card_story">
+	<p id="story" style="margin-left:159.5px;">
+		<img src="/material/image/other/Scroll.png"></p>
+</div>
+
+<div class = "card_character">
+	<a name="character"></a>
+	<p style="font-size:70px;text-align:center;margin-top:20px">Character</p>
+	<div class="tab">
+		<button style="margin-left:125px;margin-top:-20px" class="tablinks"
+		onclick="world(event, 'Spade')"id="defaultOpen"
+		><font face="fc_muffinregular" size="7">Spade</font></button>
+
+		<button style="margin-top:-20px" class="tablinks"
+		onclick="world(event, 'Heart')">
+		<font face="fc_muffinregular" size="7">Heart</font></button>
+
+		<button style="margin-top:-20px" class="tablinks"
+		onclick="world(event, 'Diamond')">
+		<font face="fc_muffinregular" size="7">Diamond</font></button>
+
+		<button style="margin-top:-20px" class="tablinks"
+		onclick="world(event, 'Club')">
+		<font face="fc_muffinregular" size="7">Club</font></button>
+
+	</div>
+
+	<div id="Spade" class="tabcontent">
+		<div class="container_g">
+			<div class="row">
+				<div class="column_g">
+					<img class="demo_spade cursor_spade"
+					src="/material/image/thumbnail/spade_thumbnail/B_K.jpg"
+					style="width:100%;height:60px;border:5px groove silver;"
+					onclick="currentSlide_spade(1)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;Elisabeth de Vermillon<br>
+					Race: Vampire<br>
+					ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;คุณหนูเอาแต่ใจแห่งราชวงศ์เวอร์มิลเลี่ยน">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_spade cursor_spade"
+					src="/material/image/thumbnail/spade_thumbnail/B_Q.jpg"
+					style="width:100%;height:60px;border:5px groove silver;"
+					onclick="currentSlide_spade(2)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zoey<br>
+					Race: Banshee<br>
+					ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					วิญญาณบรรพบุรุษของผู้รับใช้ประจำราชวงศ์เวอร์มิลเลี่ยน">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_spade cursor_spade"
+					src="/material/image/thumbnail/spade_thumbnail/B_J.jpg"
+					style="width:100%;height:60px;border:5px groove silver;"
+					onclick="currentSlide_spade(3)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;Nyvrentir,The Young One<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Dragon<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					ลูกหลานของราชันมังกรในตำนานแต่ตอนนี้ยังเด็กอยู่">
+				</div>
+			</div>
+
+			<div class="mySlides_spade">
+				<img src="/material/image/character/spade_character/Vampire.png"
+				style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_spade">
+				<img src="/material/image/character/spade_character/Banshee.png"
+				style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_spade">
+				<img src="/material/image/character/spade_character/Dragon.png"
+				style="width:500px;height:450px">
+			</div>
+
+			<div class="caption-container_spade">
+				<p id="caption_spade"></p>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="Heart" class="tabcontent">
+		<div class="container_g">
+			<div class="row">
+				<div class="column_g">
+					<img class="demo_heart cursor_heart"
+					src="/material/image/thumbnail/heart_thumbnail/B_K.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_heart(1)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;Izuna No Yozakura<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Kitsune<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					องค์หญิงจิ้งจอกขาวแห่งซากุระยามค่ำคืน">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_heart cursor_heart"
+					src="/material/image/thumbnail/heart_thumbnail/B_Q.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_heart(2)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shirayuki Masumi<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Yuki Onna<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					ภูติหิมะคู่หูขององค์หญิงจิ้งจอก">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_heart cursor_heart" src="/material/image/thumbnail/heart_thumbnail/B_J.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_heart(3)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jin<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Nekomata<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สัตย์เลี้ยงนุ่มฟูขององค์หญิงจิ้งจอก">
+				</div>
+			</div>
+
+			<div class="mySlides_heart">
+				<img src="/material/image/character/heart_character/Kitsune.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_heart">
+				<img src="/material/image/character/heart_character/Yuki Onna.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_heart">
+				<img src="/material/image/character/heart_character/Nekomata.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="caption-container_heart">
+				<p id="caption_heart"></p>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="Diamond" class="tabcontent">
+		<div class="container_g">
+			<div class="row">
+				<div class="column_g">
+					<img class="demo_diamond cursor_diamond"
+					src="/material/image/thumbnail/diamond_thumbnail/B_K.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_diamond(1)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;Maxwell of Merriment<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Jack O'Lantern<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					ผู้นำของอาณาจักร Diamond ชอบความรื่นเริงเป็นทีสุด">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_diamond cursor_diamond"
+					src="/material/image/thumbnail/diamond_thumbnail/B_Q.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_diamond(2)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;Renny,Serafim,Ace<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Will-o'-the-Wisp<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จิตวิญญาณแห่งไฟที่ชอบลอยอยู่ข้างๆ Maxwell">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_diamond cursor_diamond"
+					src="/material/image/thumbnail/diamond_thumbnail/B_J.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_diamond(3)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ecio<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Golem<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					โกเลมที่ถูกปลูกขึ้นมาเพื่อใช้ทำสวน">
+				</div>
+			</div>
+
+			<div class="mySlides_diamond">
+				<img src="/material/image/character/diamond_character/jack o'lantern.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_diamond">
+				<img src="/material/image/character/diamond_character/Will-o'-the-Wisp.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_diamond">
+				<img src="/material/image/character/diamond_character/Golem.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="caption-container_diamond">
+				<p id="caption_diamond"></p>
+			</div>
+
+		</div>
+	</div>
+
+	<div id="Club" class="tabcontent">
+		<div class="container_g">
+			<div class="row">
+				<div class="column_g">
+					<img class="demo_club cursor_club"
+					src="/material/image/thumbnail/club_thumbnail/B_K.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_club(1)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;Sharon of Consecrated<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Elf<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					เอลฟ์ชั้นสูงผู้ปกครองอาณาจักร Club">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_club cursor_club"
+					src="/material/image/thumbnail/club_thumbnail/B_Q.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_club(2)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Claire<br>
+			   	&nbsp;&nbsp;&nbsp;&nbsp;Race: Al-Mi'raj<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					องครักษ์พิทักษ์อาณาจักร Club แต่มักหายตัวไปเก็บแครอท">
+				</div>
+
+				<div class="column_g">
+					<img class="demo_club cursor_club"
+					src="/material/image/thumbnail/club_thumbnail/B_J.jpg"
+					style="width:100%;height:60px;border:5px groove silver;" onclick="currentSlide_club(3)"
+					alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dean<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Race: Unicorn<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;ILLUST: Mints<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ผู้ส่งสารของเอลฟ์ชั้นสูง">
+				</div>
+			</div>
+
+			<div class="mySlides_club">
+				<img src="/material/image/character/club_character/Elf.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_club">
+				<img src="/material/image/character/club_character/Al-Mi'raj.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="mySlides_club">
+				<img src="/material/image/character/club_character/Unicorn.png" style="width:500px;height:450px">
+			</div>
+
+			<div class="caption-container_club">
+				<p id="caption_club"></p>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+<div class="footer">
+	<p style="font-size:30px;padding-top:10px;">
+		<a href= "mailto:s5901012630075@email.kmutnb.ac.th,s6201012620163@email.kmutnb.ac.th">
+			Contact Us</a></p>
+</div>
+
+<script src="/web/js/homepage.js"></script>
+</body>
+</html>
